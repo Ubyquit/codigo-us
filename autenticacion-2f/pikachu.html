@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Factor Authentication Example</title>
+</head>
+<body>
+    <h1>Two-Factor Authentication Example</h1>
+    <form id="loginForm" action="/login" method="POST">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="authCode">Authentication Code:</label><br>
+        <input type="text" id="authCode" name="authCode" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
